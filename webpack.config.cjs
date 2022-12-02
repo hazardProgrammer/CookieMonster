@@ -24,5 +24,14 @@ module.exports = function (env) {
         fileContext: 'public',
       }),
     ],
+    module: {
+      rules: [
+        {
+          resolve: {
+            fullySpecified: false
+          }
+        }
+      ]
+    }
   };
 };

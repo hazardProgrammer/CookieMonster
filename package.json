@@ -1,6 +1,7 @@
 {
-  "name": "@cookiemonsterteam/cookiemonster-mod",
-  "version": "2.031.10",
+  "name": "@hazardprogrammer/cookiemonster",
+  "type": "module",
+  "version": "2.31.10",
   "description": "Cookie Monster is an add-on that you can load into Cookie Clicker which offers a wide range of tools and statistics to enhance the game. It is not a cheat interface – although it does offer helpers for golden cookies and such, everything can be toggled off at will to only leave how much information you want. This is a helper and everything is an option.",
   "main": "CookieMonster.js",
   "keywords": [
@@ -21,23 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CookieMonsterTeam/CookieMonster"
+    "url": "git+https://github.com/CookieMonsterTeam/CookieMonster.git"
   },
   "license": "MIT",
-  "author": {
-    "name": "Aktanusa",
-    "email": "chanam.geo@yahoo.com"
-  },
+  "author": "Aktanusa <chanam.geo@yahoo.com>",
   "contributors": [
-    {
-      "name": "Daniël van Noord",
-      "email": "13665637+DanielNoord@users.noreply.github.com"
-    },
-    {
-      "name": "Aran Leite",
-      "email": "hyoretsu@gmail.com",
-      "url": "https://www.linkedin.com/in/aranleite"
-    }
+    "Daniël van Noord <13665637+DanielNoord@users.noreply.github.com>",
+    "Aran Leite <hyoretsu@gmail.com> (https://www.linkedin.com/in/aranleite)"
   ],
   "bugs": {
     "url": "https://github.com/CookieMonsterTeam/CookieMonster/issues"
@@ -52,7 +43,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "esm": "^3.2.25",
-    "mocha": "^8.4.0",
+    "mocha": "^10.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "2.7.1",
     "webpack": "^5.73.0",
@@ -66,7 +57,18 @@
     "name": "Cookie Monster"
   },
   "dependencies": {
-    "@eastdesire/jscolor": "2.4.6",
-    "@cookiemonsterteam/cookiemonsterframework": "0.2.3"
+    "@cookiemonsterteam/cookiemonsterframework": "0.2.3",
+    "@eastdesire/jscolor": "2.4.6"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "rules": {
+    "import/extensions": [
+        "error",
+        {
+            "js": "ignorePackages"
+        }
+    ]
   }
 }

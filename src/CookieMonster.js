@@ -1,6 +1,6 @@
-import init from './InitSaveLoad/init';
-import load from './InitSaveLoad/load';
-import save from './InitSaveLoad/save';
+import init from './InitSaveLoad/init.js';
+import load from './InitSaveLoad/load.js';
+import save from './InitSaveLoad/save.js';
 
 const CM = {
   init,
